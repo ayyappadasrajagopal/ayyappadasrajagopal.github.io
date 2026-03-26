@@ -842,3 +842,13 @@ body.dark .skill-category h3 { color: #ccd6f6; }
   .contact-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
 }
+
+/* ---- Reduced motion accessibility ---- */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg { animation: none; }
+  .hero-bg::after { background-image: none; }
+  .hero-tagline { animation: none; opacity: 1; }
+  .hero-scroll { animation: none; }
+  .fade-in { transition: none; opacity: 1; transform: none; }
+  .btn, .research-card, .project-card, .contact-card, .skill-category, .skill-tag, .social-btn, .timeline-card { transition: none; }
+}
